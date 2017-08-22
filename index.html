@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TOT_DB</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+    <h1>Dinner Menu Items</h1>
+      <div class="col-md-3">
+      <h3 id="item-1"></h3>
+        <div class="input-group">
+        <input id="input-item-1" type="text" class="form-control" placeholder="Enter New Dinner Item...">
+        </div>
+      <p id="item-1-description"></p>
+        <div class="input-group">
+        <input id="input-item-1-description" type="text" class="form-control" placeholder="Enter New Description...">
+        </div>
+      <p id="item-1-price"></p>
+        <div class="input-group">
+        <input id="input-item-1-price" type="text" class="form-control" placeholder="Enter New Price...">
+        </div>
+      <button class="btn btn-danger" type="button" onclick="updateItemOne()" style="margin-top: 3%";>Change Item</button>
+      </div>
+
+      <div class="col-md-3">
+      <h3 id="item-2"></h3>
+        <div class="input-group">
+        <input id="input-item-2" type="text" class="form-control" placeholder="Enter New Dinner Item...">
+        </div>
+      <p id="item-2-description"></p>
+        <div class="input-group">
+        <input id="input-item-2-description" type="text" class="form-control" placeholder="Enter New Description...">
+        </div>
+      <p id="item-2-price"></p>
+        <div class="input-group">
+        <input id="input-item-2-price" type="text" class="form-control" placeholder="Enter New Price...">
+        </div>
+      <button class="btn btn-danger" type="button" onclick="updateItemTwo()" style="margin-top: 3%;">Change Item</button>
+      </div>
+
+      <div class="col-md-3">
+      <h3 id="item-3"></h3>
+        <div class="input-group">
+        <input id="input-item-3" type="text" class="form-control" placeholder="Enter New Dinner Item...">
+        </div>
+      <p id="item-3-description"></p>
+        <div class="input-group">
+        <input id="input-item-3-description" type="text" class="form-control" placeholder="Enter New Description...">
+        </div>
+      <p id="item-3-price"></p>
+        <div class="input-group">
+        <input id="input-item-3-price" type="text" class="form-control" placeholder="Enter New Price...">
+        </div>
+      <button class="btn btn-danger" type="button" onclick="updateItemThree()" style="margin-top: 3%;">Change Item</button>
+      </div>
+
+      <div class="col-md-3">
+      <h3 id="item-4"></h3>
+        <div class="input-group">
+        <input id="input-item-4" type="text" class="form-control" placeholder="Enter New Dinner Item...">
+        </div>
+      <p id="item-4-description"></p>
+        <div class="input-group">
+        <input id="input-item-4-description" type="text" class="form-control" placeholder="Enter New Description...">
+        </div>
+      <p id="item-4-price"></p>
+        <div class="input-group">
+        <input id="input-item-4-price" type="text" class="form-control" placeholder="Enter New Price...">
+        </div>
+      <button class="btn btn-danger" type="button" onclick="updateItemFour()" style="margin-top: 3%;">Change Item</button>
+      </div>
+    </div>
+  </div>
+  <div class="container" style="margin-top:5%;">
+    <div class="row">
+      <div class="col-md-8">
+        <h2>Most Recent Order</h2>
+        <p id="order-name"></p>
+        <p id="order-email"></p>
+        <p id="order-selection"></p>
+        <p id="order-date"></p>
+        <p id="order-total"></p>
+        <p id="order-message"></p>
+        <p id="order-time"></p>
+      </div>
+    </div>
+  </div>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+<script src="./scripts/index.js"></script>
+</body>
+</html>

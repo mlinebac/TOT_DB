@@ -1,0 +1,14 @@
+{
+  "name": "tot",
+  "version": "1.0.0",
+  "description": "tot admin firebasedb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matt Lineback",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^4.3.0"
+  }
+}
